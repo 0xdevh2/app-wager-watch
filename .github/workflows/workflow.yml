@@ -1,5 +1,6 @@
-name: workflow.yml
+name: Logger Test
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
