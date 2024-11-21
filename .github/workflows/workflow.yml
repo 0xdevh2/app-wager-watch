@@ -1,0 +1,14 @@
+name: workflow.yml
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ".github/workflows/**"
+
+jobs:
+  logger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Log
+        run: echo "main branch pushed"
